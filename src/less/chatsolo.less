@@ -1,0 +1,125 @@
+@import "~LessStyle/variables.less";
+
+#messagesThread {
+  padding-top: 20px;
+  overflow-y: scroll;
+  padding-bottom: 110px;
+}
+
+.message-background {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  /*background-image: url(http://storage.innet.club/img/backgrounds/Patern_R.png) ;*/
+  filter: blur(0.17em);
+  z-index: -1;
+}
+
+.message-container {
+  position: relative;
+}
+
+.click-zone {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.bubbleLeft, .bubbleRight {
+
+  display: inline-block;
+  //padding: 5px 9px;
+  width: 70%;
+  clear: both;
+  position: relative;
+  z-index: 11;
+}
+
+.bubbleRight {
+  text-align: left;
+  position: relative;
+  -webkit-border-radius: 10px;
+  border-radius: 5px;
+  background:@grad ;
+  margin-right: 15px;
+  color: black;
+  box-shadow: 1px 1px 0px 0.1px rgba(0, 0, 0, 0.3);
+}
+
+.bubbleLeft {
+  margin-left: 8px;
+  -webkit-border-radius: 8px;
+  //padding-left: 15px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0px 0.1px rgba(0, 0, 0, 0.3);
+  background:@grad ;
+  color: #000;
+}
+
+/*.bubbleLeft:after {
+  content: url(https://media.inrating.top/images/tail_ff.svg);
+  position: absolute;
+  bottom: -14px;
+  left: 10px;
+  width: 22px;
+}
+
+.bubbleRight:after {
+  content: url(https://media.inrating.top/images/tail_lg.svg);
+  position: absolute;
+  bottom: -12px;
+  right: 4px;
+  width: 37px;
+}*/
+
+.message-left {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 7px 10px;
+  margin: 10px 0px;
+  z-index: 1111;
+}
+
+.message-right {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 7px 10px;
+  margin: 10px 0px;
+  z-index: 1111;
+}
+
+.message-sticker {
+  width: 210px;
+  height: auto;
+}
+
+.message-sender {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 5px;
+}
+
+.sender-nickname {
+  font-size: 12px;
+  color: #26B4B2;
+}
+
+.message-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}

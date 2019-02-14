@@ -1,0 +1,4 @@
+GET http://{{host}}/users/posts/search?limit=24&intag=in
+Authorization: Bearer {{token}}
+Accept: application/json
+###

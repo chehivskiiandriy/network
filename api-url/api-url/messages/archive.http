@@ -1,0 +1,14 @@
+GET http://{{host}}/me/chats/archived/all
+Authorization: Bearer {{token}}
+Accept: application/json
+### get all archive chat
+
+POST http://{{host}}/me/chats/archive?id=320
+Authorization: Bearer {{token}}
+Accept: application/json
+### add chat to archive
+
+POST http://{{host}}/me/chats/archive?id=320&delete=true
+Authorization: Bearer {{token}}
+Accept: application/json
+### remove chat from archive

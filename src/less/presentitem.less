@@ -1,0 +1,108 @@
+@import "~LessStyle/variables.less";
+
+.present-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid @present_grey;
+  border-radius: @border-radius;
+  flex-wrap: wrap;
+  margin: 3px 0px;
+}
+
+.present-more {
+  font-weight: bold;
+  font-size: 3.8vw;
+}
+
+.without-bonus {
+  justify-content: center !important;
+}
+
+.present-avatar img {
+  width: 51px;
+  height: 52px;
+  display: block;
+  margin-right: 6px;
+}
+
+.present-left {
+  display: flex;
+  padding: 2px 5px;
+
+}
+
+.present-right {
+  min-width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+
+.present-name {
+  color:@dark_grey;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.present-name b {
+  font-size: 13px;
+}
+
+.present-price {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+
+}
+
+.present-go {
+  color:@dark_grey;
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+.present-bottom {
+  height: 6px;
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+
+  &.gold {
+    background-image: linear-gradient(-112deg, #E0B447 0%, #FFDF5D 14%, #D0A74C 31%, #FFE694 41%, #E5BE25 79%, #FFE682 84%, #DFB134 100%);
+  }
+
+  &.platinum {
+    background-image: linear-gradient(54deg, #C9D0D7 0%, #F6F6F6 21%, #D4DCDF 36%, #EEEEEE 38%, #D3D4DA 61%, #F8F8F8 75%, #CFD0DD 100%);
+  }
+
+  &.vip {
+    background-image: linear-gradient(56deg, #5AC6C5 0%, #5EC7C6 16%, #96EAE9 21%, #5FC7C6 40%, #B2F8F8 61%, #60C8C7 90%, #5EC7C6 100%);
+  }
+
+  &.premium {
+    background-image: linear-gradient(56deg, #636362 0%, #222221 16%, #5C5C5B 21%, #222221 40%, #666565 61%, #222221 90%, #636362 100%);
+  }
+}
+
+.present-bottom img {
+  display: block;
+  width: 100%;
+  border-radius: 0px 0px @border-radius @border-radius ;
+}
+
+.present-price img{
+  width: 14px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.present-modalcost img {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}

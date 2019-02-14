@@ -1,0 +1,29 @@
+GET {{host}}/users/posts/all
+Authorization: Bearer {{token}}
+Accept: application/json
+### Получить все посты
+
+GET {{host}}/users/posts/all?author_id=77
+Authorization: Bearer {{token}}
+Accept: application/json
+### get all post by author
+
+GET {{host}}/users/posts/all?page=2
+Authorization: Bearer {{token}}
+Accept: application/json
+### get all psot page 2
+
+GET {{host}}/users/posts/get?slug=8yP69vuujAuc
+Authorization: Bearer {{token}}
+Accept: application/json
+### get one post
+
+GET {{host}}/users/posts/get?id=3079
+Authorization: Bearer {{token}}
+Accept: application/json
+### get one post
+
+GET {{host}}/mentioned-users/on-image/all?ids='[845]'
+Authorization: Bearer {{token}}
+Accept: application/json
+### Получить все посты

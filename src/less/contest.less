@@ -1,0 +1,141 @@
+@import "~LessStyle/variables.less";
+
+#contest-container{
+
+  padding-bottom: 65px;
+  .carousel-index{
+    bottom: 1.3%;
+    color: #fff;
+    position: absolute;
+    font-size: 12px;
+    border-radius: 3px;
+    left: 1px;
+    width: 14px;
+    height: 14px;
+    .bgc-grad();
+  }
+}
+
+.contest-item{
+  width: 99%;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 3px;
+  border: 1px solid #d3d3d3;
+  display: flex;
+  margin-top: 2px;
+  margin-bottom: 3px;
+  box-sizing: border-box;
+}
+
+.contest-item--avatar img{
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  display: block;
+}
+
+.contest-item--body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 10px;
+  width: 90%;
+  text-align: left;
+  font-size: 14px;
+  position: relative;
+}
+
+.contest-archive{
+  width: 100%;
+}
+
+.contest-name{
+  margin: 0;
+  color: #777;
+  font-size: 3.5vw;
+}
+
+.contest-name-grad {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+  .text-grad();
+}
+
+.contest-archive{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 10px;
+
+}
+
+.contest-archive p{
+  margin: 0;
+}
+
+.archive-time{
+  color: #d3d3d3;
+}
+
+.archive-time .comment-createdAt span {
+  font-size: 9px;
+}
+
+.archive-look{
+  position: absolute;
+  right: 2px;
+  bottom: 0;
+  color: @contest-list-text-color;
+}
+
+.contest-header{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  background: #fff;
+}
+
+.carousel-item{
+  width: 18%;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-avatar{
+  box-shadow: 2px 2px 0 0 rgba(95, 92, 92, 0.2);
+  border-radius: 5px;
+  position: relative;
+}
+
+.carousel-avatar img{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+}
+
+
+.carousel-name{
+  width: 100%;
+  font-size: 2vw;
+  .no-wrap();
+}
+
+#contest-container a{
+  text-decoration: none;
+}
+
+
+.comming-soon-item {
+  display: flex;
+  align-items: center;
+
+}
+
+.comming-soon {
+  line-height: 1;
+}

@@ -1,0 +1,23 @@
+module.exports = {
+  send_gift : 'Отправил(-ла) подарок',
+  make_comment: 'Прокомментировал(-ла)  ваш пост',
+  subscribe_you: 'Подписался(-лась) на Вас',
+  add_rating:'Поднял(-ла) Вам рейтинг ',
+  contest_vote:'Проголосовал(-ла) за Вас в конкурсе',
+  group_invitation:'Пригласил(-ла) Вас в группу',
+  registration_first:'Добро пожаловать в InRating',
+  chin_chin:'Прислал(-ла) Вам Chin-Chin Flirt',
+  coins_recieved:'Прислал(-ла) Вам ',
+  incoins: 'INCoins',
+  like:'Лайкнул(-ла) Ваш пост',
+  chat_message:'Прислал Вам сообщение',
+  gift_filter: 'Подарки',
+  rating_vote_filter: 'Рейтинг',
+  chin_chin_filter: 'Chin-chin',
+  follow_filter: 'Подписки',
+  mention_filter: 'Отметки',
+  like_filter: 'Лайки',
+  group_invite_filter: 'Приглашения',
+  comment_filter: 'Комментарии',
+  noted_you_on_post: 'Отметил вас на посте'
+}

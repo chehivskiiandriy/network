@@ -1,0 +1,213 @@
+@import "~LessStyle/variables.less";
+
+.gift-sender-avatar .gift-sender-avatar-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: block;
+  border: 0.5px solid #ccc;
+  //max-width: 68px;
+  //max-height: 68px;
+}
+
+.profile-gift-item{
+  display: flex;
+  width:100vw;
+  padding: 1vw 1.45vw 1vw 1.7vw;
+  box-sizing: border-box;
+}
+
+.gift-item{
+  &-div{
+    width: 18vw;
+    height: 18vw;
+    margin: 0 0.7vw;
+    display: inline-block;
+  }
+  &-sender{
+
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+    b{
+      font-size: 2.35vw;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  &-avatar{
+    //width: 100%;
+    //max-width: 68px;
+    //max-height: 68px;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      display: block;
+      border: 0.5px solid #ccc;
+    }
+
+    .icon-letter-v-podarki {
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      font-size: 3.6vw;
+      background: @grad;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &-accept{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #ccc;
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 2vw;
+    }
+  }
+  &-timeout{
+    font-size: 4.8vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    i{
+      background: @grad;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      &.icon-letter{
+        position: relative;
+        font-size: 1.1em;
+      }
+    }
+    p{
+      font-size: 5.7vw;
+      margin: 0;
+    }
+  }
+
+}
+
+.gift-sender-message{
+  font-size: 2vw;
+  color: #9f9f9f;
+  margin: 0 0 0 0;
+  text-align: left;
+}
+
+.gift-notaccepted{
+  font-size: 2.5vw;
+  color: #9f9f9f;
+  letter-spacing: -0.5px;
+}
+
+.gift-acceptnow{
+  font-size: 2.8vw;
+  //.text-grad();
+  color:@base_green;
+}
+
+.gift-accepted{
+  font-size: 2.8vw;
+  //.text-grad();
+  color:@base_green;
+}
+
+.gift-sender-activegift{
+  position: absolute;
+  opacity: 0.7;
+  width: 5vw;
+  height: 5vw;
+  bottom: 3%;
+  right: 3px;
+  background-color: #fff;
+  padding: 1px;
+  border-radius: 3px;
+}
+
+.gift-sender-avatar{
+  margin-left: 0;
+  position: relative;
+  border: 0.5px solid #ccc;
+  .border-radius(5px);
+}
+
+.comment-createdAt{
+  font-size: 1.7vw;
+  margin-top: 0;
+  color: #000 !important;
+}
+
+.can, .cant, .active{
+  font-size: 2.4vw;
+  color: #000;
+}
+
+.userContentGift-info-time{
+  margin-top: -3px;
+}
+
+.can{
+  color: #000;
+}
+
+.cant{
+  color: #d3d3d3;
+}
+
+.active{
+  color: @contest-list-text-color;
+}
+
+
+@media screen and (max-width: 320px){
+
+  .profile-gift-item {
+    align-items: center;
+  }
+  .gift-item-sender {
+    display: block;
+    margin-top: -11px;
+  }
+
+  .gift-item-sender b {
+    font-size: 2vw;
+  }
+
+  .gift-sender-message {
+    font-size: 1.8vw;
+  }
+
+  .gift-accepted {
+    display: block;
+    padding: 13px 0;
+    font-size: 10px;
+  }
+
+  .gift-item-timeout i.icon-letter {
+    margin-right: 4px;
+  }
+  .gift-item-timeout {
+    padding: 2px;
+  }
+
+  .comment-createdAtTime {
+    display: none;
+  }
+
+  .userContentGift-info-time {
+    font-size: 1.5vw;
+    margin-top: 3px;
+  }
+
+}

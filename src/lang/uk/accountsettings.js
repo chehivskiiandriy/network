@@ -1,0 +1,18 @@
+module.exports = {
+  account: 'Настройки профілю',
+  change_password: 'Змінити пароль',
+  likes_history: 'історія лайків',
+  black_list: 'Чорний список',
+  close_profile: 'Тимчасово закрити акаунт',
+  phone: 'Мобільний телефон',
+  old_password: 'Старий пароль',
+  new_password: 'Новий пароль',
+  repeat_password: 'Повторити пароль',
+  save: 'Зберегти',
+  only_for_application: 'Тільки для заявок',
+  sub_on_page: 'Хто може підписатися на мій профіль',
+  sees_page: 'Хто бачить пости моєї сторінки',
+  sees_followers: 'Хто бачить моїх передплатників',
+  sees_subscriptions: 'Хто бачить мої підписки',
+  can_write_chat: 'Хто може писати мені в чат',
+}

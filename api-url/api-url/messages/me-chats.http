@@ -1,0 +1,24 @@
+GET http://{{host}}/me/chats/all
+Authorization: Bearer {{token}}
+Accept: application/json
+### get all my chat
+
+GET http://{{host}}/me/chats/get?id=256
+Authorization: Bearer {{token}}
+Accept: application/json
+### get my chat with {{id}}
+
+GET http://{{host}}/me/chats/messages/all?chat_id=436
+Authorization: Bearer {{token}}
+Accept: application/json
+### get certain chat
+
+GET http://{{host}}/me/chats/messages/all?chat_id=318
+Authorization: Bearer {{token}}
+Accept: application/json
+### get certain chat
+
+GET http://{{host}}/me/chats/messages/send?chat_id=311&message='testmsg'
+Authorization: Bearer {{token}}
+Accept: application/json
+### set message to petter

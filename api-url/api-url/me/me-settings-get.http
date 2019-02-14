@@ -1,0 +1,9 @@
+GET http://{{host}}/me/settings/get
+Authorization: Bearer {{token}}
+Accept: application/json
+###
+
+GET http://{{host}}/me/settings/bonus-fields
+Authorization: Bearer {{token}}
+Accept: application/json
+###

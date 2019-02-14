@@ -1,0 +1,4 @@
+GET http://{{host}}/me/settings/base/edit?name=GHdjsfjdjkfd
+Authorization: Bearer {{token}}
+Accept: application/json
+###

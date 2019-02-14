@@ -1,0 +1,23 @@
+module.exports = {
+  send_gift : 'Відправити подарунок',
+  make_comment: 'Прокоменутвав Ваш пост',
+  subscribe_you: 'Підписався на Вас',
+  add_rating:'Підняв Вам рейтинг',
+  contest_vote:'Проголосував за Вас у конкурсі',
+  group_invitation:'Запросив Вас у групу',
+  registration_first:'Ласкаво просимо в Inrating',
+  chin_chin:'Відправив(-ла) Вам Chin-Chin Flirt',
+  coins_recieved:'Відправив(-ла) Вам ',
+  incoins: 'INCoins',
+  like:'Лайкнув Ваш пост',
+  chat_message:'Прислав Вам повідомлення',
+  gift_filter: 'Подарки',
+  rating_vote_filter: 'Рейтинг',
+  chin_chin_filter: 'Chin-chin',
+  follow_filter: 'Підписки',
+  mention_filter: 'Відмітки',
+  like_filter: 'Лайки',
+  group_invite_filter: 'Запрошення',
+  comment_filter: 'Коментарі',
+  noted_you_on_post: 'Відзначив вас на пості'
+}

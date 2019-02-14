@@ -1,0 +1,4 @@
+GET http://{{host}}/contests/users/all?contest_id=8
+Authorization: Bearer {{token}}
+Accept: application/json
+###

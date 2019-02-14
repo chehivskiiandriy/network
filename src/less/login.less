@@ -1,0 +1,316 @@
+@import "~LessStyle/variables.less";
+
+.welcome-logo {
+  font-size: 40px;
+  .text-grad()
+}
+
+.login-header{
+  text-align: center;
+  color: @white;
+  padding-top: 10px;
+}
+
+.main-login-logo {
+  margin: 10px 0;
+  max-width: 200px;
+  width: 100%;
+}
+
+.login-title {
+  margin-bottom: 10px;
+}
+
+.login-header h2{
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.login-header i{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  z-index: 11;
+}
+
+.login-body{
+  width: 100%;
+  margin: auto;
+  padding-top: 5px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+  position: relative;
+
+}
+
+.login-body p{
+  text-align: center;
+  color: #fff;
+}
+
+.login-item{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-item input{
+  width: 100%;
+  border-radius: 5px;
+  padding: 11px;
+  box-sizing: border-box;
+  background-color: @white;
+  border: 0;
+  font-size: 15px;
+}
+
+.login-item a{
+  color: #fff;
+}
+
+.login-blur{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.25) border-box;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.login-blur::before{
+  content: '';
+  position: absolute;
+  top: -165px;
+  right: -12px;
+  bottom: 0;
+  left: 0;
+  margin: -40px;
+  z-index: -1;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  background-image: url(https://media.inrating.top/storage/img/backgrounds/FON_M_NEW_2.png);
+
+  background-size: cover;
+}
+
+.login-item button{
+  background: #fff;
+  border: 1px solid @contest-list-text-color;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: @contest-list-text-color;
+  font-size: 13px;
+  width: 75%;
+}
+
+.login-item .selectpicker {
+  width: 75%;
+}
+
+.container-fluid{
+  margin: 20px 0 0 0;
+  display: flex;
+  padding: 0 3% 20px 3%;
+  justify-content: space-between;
+}
+
+.reset-email{
+  width: 80%;
+  margin: auto;
+  margin: 0 0 10px;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  height: 40px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.login-block{
+  text-align: center;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px 10px 0 0;
+  width: 85vw;
+  margin: 5vh auto 0 auto;
+  //animation: trY 0.5s ease-out forwards;
+  animation: opa 1s ease-out forwards;
+  padding-bottom: 100px;
+}
+
+@keyframes opa {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes trY {
+  from {
+    transform: translateY(100vh);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.login-header {
+  opacity: 0;
+  animation: trY 0.5s ease-out 1s forwards;
+}
+
+.login-body {
+  opacity: 0;
+  animation: trY 0.5s ease-out 1s forwards;
+}
+
+.login-footer {
+  opacity: 0;
+  animation: trY 0.5s ease-out 1s forwards;
+}
+
+@keyframes tr {
+  from {
+    transform: translate(-50%, 100vh);
+  }
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
+.main-block {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px 10px 0 0;
+  width: 85vw;
+  margin: 0 auto;
+  color: @white;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  //animation: tr 0.5s ease-out forwards;
+  //animation-delay: 1s;
+
+  h2 {
+    margin: 10px 0;
+  }
+
+  .login-page {
+    color: @white;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15px;
+    .bgc-grad();
+    margin: 10px 0;
+  }
+}
+
+.forgot-password {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.update-input{
+  margin: 0;
+}
+
+.buttons-continue{
+  width: 90%;
+  padding: 0 0 15px;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+}
+
+.forggot-password{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  button {
+    color: @white;
+    border: none;
+    .bgc-grad();
+    width: 50%;
+  }
+}
+
+#Login{
+  //background-image: url(https://media.inrating.top/storage/img/backgrounds/FON_M_NEW_2.png);
+  //background-size: cover;
+  //margin-top: -39px;
+  //margin-bottom: -70px;
+  height: 100vh;
+}
+
+.country-list p{
+  color: #000000;
+}
+
+[name="registetionStep1"]{
+  .modal-title{
+    margin: 0 0 40px 0;
+  }
+}
+
+.fluid-image{
+  width: 40px;
+  height: 40px;
+}
+
+.selectpicker{
+  background-color: #fff;
+  color: #00b5b3;
+  border: 1px solid #00b5b3;
+  width: 136px;
+  height: 37px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.concat-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  color: @white;
+}
+
+.concat-item img{
+  margin: 0 1px;
+  width: 47.5%;
+}
+
+.concat-item >  a > img{
+  margin: 0 1px;
+  width: 91%;
+}
+
+
+.login-information{
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  color: @white;
+}
+
+

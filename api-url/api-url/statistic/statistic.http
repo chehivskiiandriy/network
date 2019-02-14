@@ -1,0 +1,9 @@
+GET http://{{host}}/me/statistic/admin/all?from=2017-10-05&to=today
+Authorization: Bearer {{token}}
+Accept: application/json
+###
+
+POST http://{{host}}/me/statistic/daily/all?from=2018-04-11&to=2018-05-11&type=like
+Authorization: Bearer {{token}}
+Accept: application/json
+###

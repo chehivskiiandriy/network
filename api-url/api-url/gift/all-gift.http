@@ -1,0 +1,4 @@
+GET http://{{host}}/gifts/all
+Authorization: Bearer {{token}}
+Accept: application/json
+###

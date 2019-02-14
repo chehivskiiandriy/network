@@ -1,0 +1,24 @@
+GET http://{{host}}/users/posts/all?author_nickname={{nickname}}
+Authorization: Bearer {{token}}
+Accept: application/json
+### все мои посты
+
+GET http://{{host}}/users/posts/get?slug=VKicdfHMTxFE
+Authorization: Bearer {{token}}
+Accept: application/json
+### отдельный пост любого пользователя
+
+GET http://{{host}}/me/posts/mentions/all
+Authorization: Bearer {{token}}
+Accept: application/json
+### все мои отметки
+
+GET http://{{host}}/me/posts/bookmarks/all
+Authorization: Bearer {{token}}
+Accept: application/json
+### все мои закладки
+
+GET http://{{host}}/me/gifts/all
+Authorization: Bearer {{token}}
+Accept: application/json
+### все мои подарки

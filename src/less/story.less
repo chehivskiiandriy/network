@@ -1,0 +1,335 @@
+@import "~LessStyle/variables.less";
+
+.story-block {
+  height: 100vh;
+  background-size: cover;
+  margin-top:-45px;
+  margin-bottom: -70px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.swiper-container {
+  background: transparent;
+}
+
+.story-blur {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+  filter:blur(1.5em);
+  top: 0px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+
+  justify-content: center;
+}
+
+
+
+
+.story-main {
+  width: 100%;
+}
+
+.story-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  top:1px;
+  width: 100%;
+  z-index: 111;
+  background: linear-gradient(180deg,#000,transparent);
+
+}
+
+
+
+.story-user {
+  width: 38%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4px;
+
+}
+
+.story-userinfo {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.story-userinfo .profile-ratebar{
+  border-radius: 2px;
+  border: 0px;
+}
+
+.story-userinfo .profile-ratingvalue{
+  font-size: 7px;
+  top:0px;
+}
+
+
+.story-useravatar {
+  width: 10vw;
+}
+
+.story-useravatar img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 3px;
+}
+
+.story-main video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  z-index: 111;
+}
+
+#story-user {
+  width: 100px;
+  height: 100px;
+}
+
+
+.storyadd-carousel-item {
+  width: 100%;
+  position: relative;
+}
+
+.canvas-story {
+
+  width: 100%;
+  height: 36px;
+  top: 0px;
+  left:0px;
+  position: absolute;
+  border-radius: 0px;
+  border: 0px;
+  transform: rotate(90deg) scale(1, -1);
+}
+
+.story-slide {
+  width: 50%;
+
+}
+
+
+.story-image {
+  width: 100%;
+  height: auto;
+
+}
+
+.story-carousel-slider img {
+  display: block;
+}
+
+.story-carousel-slider {
+  padding: 2px;
+  position: relative;
+  box-sizing: border-box;
+  margin:0px 3px;
+  border-radius: 4px;
+
+}
+
+svg {
+  top:0px;
+  left:0px;
+}
+
+//Colors
+@background: #fefefe;
+@text: #4b507a;
+
+@cyan: #60daaa;
+@yellow: #fbca67;
+@orange: #ff8a30;
+@red: #f45e61;
+@purple: #6477b9;
+@blue: #0eb7da;
+
+/*
+.animation-draw {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+
+
+  // Using inset box-shadow instead of border for sizing simplicity
+  box-shadow: inset 0 0 0 2px @red;
+  color: @red;
+  font-size: inherit;
+  font-weight: 700;
+
+  // Required, since we're setting absolute on pseudo-elements
+  position: relative;
+  vertical-align: middle;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.draw {
+  transition: color 15s;
+
+  &::before,
+  &::after {
+    // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  // This covers the top & right borders (expands right, then down)
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  // And this the bottom & left borders (expands left, then up)
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover {
+    color: @cyan;
+  }
+
+  // Hover styles
+  &:hover::before,
+  &:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover::before {
+    border-top-color: @cyan; // Make borders visible
+    border-right-color: @cyan;
+    transition:
+      width 15s ease-out, // Width expands first
+      height 15s ease-out 15s; // And then height
+  }
+
+  &:hover::after {
+    border-bottom-color: @cyan; // Make borders visible
+    border-left-color: @cyan;
+    transition:
+      border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+      width 0.25s ease-out 0.5s, // And then exanding width
+      height 0.25s ease-out 0.75s; // And finally height
+  }
+}
+*/
+.story-slider-top {
+
+}
+
+
+@clientWidth() {
+  width:100%;
+}
+
+.story-top-carousel {
+  border-radius: 3px;
+  padding: 1%;
+  box-sizing: border-box;
+
+}
+
+.slide-enter-active, .slide-leave-active {
+  transition: transform .5s
+}
+.slide-enter {
+  transform: translateX(100%)
+}
+.slide-leave-active {
+  transform: translateX(-100%);
+}
+
+
+.story-userinfo p{
+  margin: 0px;
+  color:#fff;
+  text-align: right;
+;
+}
+
+.cancel-story {
+  color:#fff;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+
+#videostory-preview {
+  display: none;
+  margin:10px auto;
+  padding-top: 10px;
+  width: 60%;
+}
+
+
+.story-footer {
+  display: flex;
+
+  color: @white;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  z-index: 111;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  padding:10px 6% ;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+  background: linear-gradient(180deg,transparent,#000);
+}
+
+
+.go-prev-story {
+  width: 33%;
+  position: absolute;
+  height: 100vh;
+  left:0px;
+}
+
+.go-next-story {
+  width: 33%;
+  position: absolute;
+
+  height: 100vh;
+  right:0px;
+}
+
+
+.story-profile-nickname {
+  font-size: 13px;
+}
+
+.story-profile-nickname a {
+  color: #fff;
+}

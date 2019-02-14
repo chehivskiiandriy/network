@@ -1,0 +1,9 @@
+GET http://{{host}}/users/subscribe?id=7&delete=false
+Authorization: Bearer {{token}}
+Accept: application/json
+###
+
+GET http://{{host}}/users/subscribe?id=7
+Authorization: Bearer {{token}}
+Accept: application/json
+###

@@ -1,0 +1,4 @@
+GET http://{{host}}/me/gifts/accept?gift_id=
+Authorization: Bearer {{token}}
+Accept: application/json
+###

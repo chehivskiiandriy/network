@@ -1,0 +1,4 @@
+GET http://{{host}}/users/search?query=
+Authorization: Bearer {{token}}
+Accept: application/json
+###

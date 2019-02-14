@@ -1,0 +1,23 @@
+GET http://{{host}}/users/posts/rating/new
+Authorization: Bearer {{token}}
+Accept: application/json
+// Новая лента рейтинга
+###
+
+GET http://{{host}}/users/posts/rating/new?type=day
+Authorization: Bearer {{token}}
+Accept: application/json
+// Новая лента рейтинга
+###
+
+GET http://{{host}}/users/posts/rating/new?type=week
+Authorization: Bearer {{token}}
+Accept: application/json
+// Новая лента рейтинга
+###
+
+GET http://{{host}}/users/posts/rating/new?type=month
+Authorization: Bearer {{token}}
+Accept: application/json
+// Новая лента рейтинга
+###

@@ -1,0 +1,23 @@
+module.exports = {
+  send_gift : 'Send you a gift',
+  make_comment: 'Commented:',
+  subscribe_you: 'Subscribe to you',
+  add_rating:'Raised your rating ',
+  contest_vote:'Vote you in contest',
+  group_invitation:'Invite to group',
+  registration_first:'Welcome to Inrating',
+  chin_chin:'Send you Chin-Chin Flirt',
+  coins_recieved:'Send you ',
+  incoins: 'INCoins',
+  like:'Liked your post',
+  chat_message:'Send you message',
+  gift_filter: 'Gifts',
+  rating_vote_filter: 'Rating',
+  chin_chin_filter: 'Chin-chin',
+  follow_filter: 'Subscriptions',
+  mention_filter: 'Mentions',
+  like_filter: 'Likes',
+  group_invite_filter: 'Invitations',
+  comment_filter: 'Comments',
+  noted_you_on_post: 'Tag in photo'
+}

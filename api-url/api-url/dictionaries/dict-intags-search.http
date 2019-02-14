@@ -1,0 +1,4 @@
+GET http://{{host}}/dict/intags/search?query=mar
+Authorization: Bearer {{token}}
+Accept: application/json
+###

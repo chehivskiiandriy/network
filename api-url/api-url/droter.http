@@ -1,0 +1,15 @@
+PUT https://restdev01.tiw-sys.eu/api/v1/drotr/users/vcard
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjUxODc4MzgsImlhdCI6MTUyMDAwMzgzOCwianRpIjoiZThmMGVhZGYtYTZkYy00MTllLTg1ZDktMDg0OTM2ZWM4MWQxIiwibmJmIjoxNTIwMDAzODM4LCJ1c2VyX25hbWUiOiIxMjM0NTczMzYzNyJ9.YJPw__xDitrhBqngzUdVjplKaI2bXJcJTt3fM5VDTkM
+Content-Type: application/json
+
+{
+	"language":"ru",
+	"name":"Johnvvv",
+	"tel":["+380996316166"]
+}
+###
+
+GET https://restdev01.tiw-sys.eu/api/v1/drotr/users/vcard
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjU0Mjg1MjcsImlhdCI6MTUyMDI0NDUyNywianRpIjoiNjE3OTg0MTMtMmY3YS00MDQ1LTg3OWUtOWYyNmE2MTYzNjM4IiwibmJmIjoxNTIwMjQ0NTI3LCJ1c2VyX25hbWUiOiIxMjM0NTczMzYzNyJ9.b_POcNrPHVzYcu383NFmk4hDydwZ8f9OFUlHeAdK-gg
+Content-Type: application/json
+###

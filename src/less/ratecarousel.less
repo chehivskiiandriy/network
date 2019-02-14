@@ -1,0 +1,168 @@
+@import "~LessStyle/variables.less";
+
+.rate-carousel{
+  width: 100%;
+  z-index: 1111;
+  background: @white;
+  top: 40px;
+
+}
+
+.rate-carousel  .rate-carousel--nickname {
+  margin-top: 2px;
+}
+
+p{
+  margin: 0;
+}
+
+.VueCarousel-wrapper{
+  transition: 1s linear;
+}
+
+.rate-carousel > .VueCarousel{
+  background: white;
+}
+
+.rate-carousel .VueCarousel-pagination{
+  top: 0;
+  width: 95.5% !important;
+  text-align: right !important;
+}
+
+.carousel-indexing-rate{
+  //bottom: 21% !important;
+}
+
+.rate-carousel-item{
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px 10px 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.carousel-title{
+  width: 100%;
+  font-size: 12px;
+  margin-bottom: 2px;
+  margin-top: -4px;
+}
+
+.rate-carousel-image{
+  //width: 16%;
+  width: calc(~'18vw - 4px');
+  height: auto;
+  position: relative;
+  margin: 0 1vw;
+}
+
+.rate-container {
+  position: relative;
+  height: calc(~'18vw - 4px');
+}
+
+.rate-carousel-image img{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 5px;
+  /*box-shadow: 2px 2px 0 0 rgba(95, 92, 92, 0.2);*/
+}
+
+.rate-carousel--nickname{
+  font-size: 2.4vw;
+  text-align: center;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000;
+  margin-top: -1px;
+}
+
+.carousel-index{
+  color: #fff;
+  position: absolute;
+  font-size: 12px;
+  border-radius: 3px;
+  left: 2px;
+  bottom: 2px;
+  width: 14px;
+  height: 14px;
+  .bgc-grad();
+}
+
+.story-carousel-item{
+  width: 16% !important;
+  margin: 5px 1.7%;
+}
+
+.story-carousel-image .story-avatar{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.story-img--present{
+  position: absolute;
+  width: 25%;
+  height: auto;
+  bottom: 5.5vw;
+  right: 7%;
+  opacity: 0.7;
+  background-color: #fff;
+  padding: 1px;
+  border-radius: 3px;
+}
+
+.story-carousel-image{
+  position: relative;
+}
+
+.not-see-story{
+  padding: 2px;
+  border: 1px solid @contest-list-text-color;
+}
+
+.see-story{
+  padding: 2px;
+  border: 1px solid #d3d3d3;
+}
+
+.story-title{
+  width: 100%;
+  margin: 0;
+  background: linear-gradient(to left top, #000fbc, #30c2be 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.story-add{
+  border: 1px solid @base_green;
+  font-size: 14px;
+  border-radius: 8px;
+  color: @base_green;
+  padding-top: 9px;
+
+}
+
+.story-add p{
+  margin: 6px 0;
+}
+
+.VueCarousel-dot > button{
+  border-radius: 2px !important;
+  margin-top: 0;
+}
+
+.add-story-text{
+  background: linear-gradient(to left top, #000fbc, #30c2be 50%);
+  overflow: visible !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 120%;
+  margin-left: -10%;
+}

@@ -1,0 +1,193 @@
+@import "~LessStyle/variables.less";
+
+#wallet {
+  margin-top: -3px;
+
+}
+
+#money {
+  padding-bottom: 40px;
+  padding-top: 5px;
+  background: @grey_grey;
+
+}
+
+.my-current-balance {
+  display: flex;
+  align-items: center;
+}
+
+.wallet-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wallet-tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.wallet-header--item {
+  width: 50%;
+  //text-align: center;
+  //padding: 10px 0;
+
+  height: 30px;
+  color:@dark_grey;
+  background: #dcdcdc;
+  padding: 5px 0;
+  border: 1px solid #aba8a8;
+  font-size: 4vw;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+
+  p {
+    padding-left: 5px;
+  }
+
+  &.active {
+    background: @white;
+    border: 1px solid #aba8a8;
+    border-bottom: 0px ;
+
+
+    i {
+      color: @base_green;
+    }
+  }
+}
+
+.wallet-common {
+  background:@grey_grey;
+  color:@middle_grey;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 5px 0;
+}
+
+.my-balance {
+  width: 100%;
+  display: flex;
+  background: @white;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  box-sizing: border-box;
+  font-weight:bold ;
+  border-bottom: 1px solid @base_green;
+}
+
+
+.wallet-active {
+  font-weight: bold;
+  background: @white;
+}
+
+.wallet-active i {
+  color: @base_green;
+}
+
+.money-item {
+  display: flex;
+  font-weight: 600;
+  padding: 0px 0px;
+  width: 99%;
+  margin:2px  auto;
+  background: @white;
+  justify-content: space-between;
+  border-radius: @border-radius;
+}
+
+
+.money-bye-arrow {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1%;
+}
+
+.money-arrow {
+  color:@base_green;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+.money-bye {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: @white;
+  font-weight: bold;
+  font-size: 23px;
+  .bgc-grad();
+  padding: 10px 0;
+  margin-right: 2%;
+
+}
+
+.money-incoins {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 6vw;
+  width:70%;
+  margin-left: 1.5%;
+  padding: 5px 0px;
+  .coins-money {
+    display: flex;
+    align-items: center;
+    padding:13px 4px;
+    img {
+      width: 35px;
+      margin-right: 10px;
+    }
+  }
+  span {
+    display: flex;
+    position: relative;
+    align-items: center;
+    .amount-count {
+      position: absolute;
+      font-size: 10px;
+      right:3px;
+      top:3px;
+    }
+    img {
+      width: 11vw;
+      border-radius: 5px;
+      padding: 3px;
+      border: 1px solid #d3d3d3;
+      margin-left: 10px;
+    }
+  }
+}
+
+
+.my-balance-block {
+  display: flex;
+  align-items: center;
+
+  .count-balance {
+    padding-left: 5px;
+  }
+}
+
+.my-balance-img {
+  width: 16px;
+  padding-bottom: 2px;
+}
+
+.my-balance-img-premium {
+  width: 20px;
+  padding-bottom: 3px;
+}

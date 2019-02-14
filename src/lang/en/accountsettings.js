@@ -1,0 +1,18 @@
+module.exports= {
+  account:'User settings',
+  change_password:'Change password',
+  likes_history:'Histories likes',
+  black_list:'Black list',
+  close_profile:'Close profile',
+  phone:'Phone',
+  old_password:'Old password',
+  new_password:'New password',
+  repeat_password:'Repeat password',
+  save:'Save',
+  only_for_application:'Only for application',
+  sub_on_page:'Who can subscribe to the page',
+  sees_page: 'Who sees the posts of my page',
+  sees_followers:'Who sees my followers',
+  sees_subscriptions:'Who can see my subscriptions',
+  can_write_chat:'Who can write to me in the chat',
+}

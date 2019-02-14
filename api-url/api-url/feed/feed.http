@@ -1,0 +1,14 @@
+GET http://{{host}}/me/feeds/all
+Authorization: Bearer {{token}}
+Accept: application/json
+### old feed
+
+GET http://{{host}}/me/feeds/new/all
+Authorization: Bearer {{token}}
+Accept: application/json
+### new feed
+
+GET http://{{host}}/me/feeds/new/all?page=2
+Authorization: Bearer {{token}}
+Accept: application/json
+### new feed by page

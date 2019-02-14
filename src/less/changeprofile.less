@@ -1,0 +1,391 @@
+@import '~LessStyle/variables.less';
+
+#change-profile{
+  margin-top: -43px;
+  padding-bottom: 40px;
+
+  .change-status--header {
+    margin: 20px auto;
+  }
+
+  .change-status--item div{
+    //width: 65%;
+    text-align: left;
+    font-size: 4vw;
+  }
+
+  .status-item--title{
+    width: 65%;
+    //position: relative;
+
+    &.not-active a {
+      color: #2c3e50;
+    }
+  }
+
+  .choose-status {
+    width: 35%;
+  }
+
+  .icon-back {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    color: #fff;
+    font-size: 22px;
+  }
+
+  .profile-header {
+    text-align: center;
+    height: 40px;
+    background: @grad;
+    color: #fff;
+    font-size: 22px;
+    padding: 5px 0;
+    line-height: 30px;
+    box-sizing: border-box;
+
+    .title {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+.status-item--title.not-active a {
+  color: #2c3e50;
+}
+
+
+.crop-container {
+  position: relative;
+}
+
+.icon-cropper {
+  position: absolute;
+  width: 8vw;
+  bottom: 4vw;
+  right: 4vw;
+}
+
+.change-profile-item {
+  position: relative;
+
+  .label-item {
+    position: relative;
+    transition: 0.5s;
+    padding-left: 10px;
+    color: @middle_grey;
+    margin: 5px 0;
+  }
+
+  .info-error {
+    transition: 0.5s;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 12px;
+    color: #ff2e2f;
+  }
+
+  .input-block {
+    margin: 5px 0 5px 0;
+  }
+
+  &.error {
+    .label-item {
+      top: -12px;
+    }
+
+    input {
+      box-shadow: 0 0 10px #eb0323;
+      border: 1px solid #b53b45;
+    }
+  }
+}
+
+.email-block {
+  position: relative;
+
+  .icon-edit {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    .text-grad();
+  }
+}
+
+.change-email-modal {
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px 15px 15px 15px;
+  position: relative;
+
+  .change-email-title {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .save-email {
+    color: @contest-list-text-color;
+    border: none;
+
+    &:disabled {
+      color: @middle_grey;
+    }
+  }
+
+  .error-change-email {
+    color: #ff2e2f;
+    height: 20px;
+    width: 100%;
+  }
+
+  .close-change-email {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  .change-modal-input {
+    margin: 0 0 20px 0;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-bottom: 1px solid @contest-list-text-color;
+
+    &.error {
+      border-bottom-color: #ff2e2f;
+    }
+  }
+}
+
+.extra-fields{
+  margin: 10px auto;
+  padding: 5px 0;
+  background: @base_green;
+  color: @white;
+  font-weight: 600;
+}
+
+button{
+  border: 1px solid #81d8d0;
+  border-radius: 5px;
+  color: #81d8d0;
+  padding: 6px 20px;
+  font-size: 14px;
+}
+
+.change-names{
+  text-align: left;
+  width: 90%;
+  margin: auto;
+}
+
+.change-names .label{
+  margin: 10px 0;
+  position: relative;
+}
+
+.change-input{
+  display: block;
+  width: 100%;
+  height: 34px;
+  margin: auto;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid @base_green;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.change-status--header{
+  padding: 15px 0;
+  text-align: center;
+  color: @dark_grey;
+  background-color: @grey_grey;
+  font-weight: 600;
+}
+
+.change-status-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.change-status--item{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 10px 5px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.choose-status{
+  text-align: right;
+  color: #d3d3d3;
+  font-size: 14px;
+}
+
+.family-header{
+  text-align: center;
+  color: #000;
+  position: relative;
+  font-weight: 300;
+}
+
+.closeFamily{
+  position: absolute;
+  left: 10px;
+  top: 3px;
+}
+
+.family-item--text{
+  width: 95%;
+
+  border-bottom: 1px solid #d3d3d3;
+  box-sizing: border-box;
+  margin-left: 5%;
+}
+
+.family-block{
+  padding: 0 10px;
+  border-top: 1px solid #d3d3d3;
+}
+
+.family-item > span > .icon-check-f{
+  color: @contest-list-text-color;
+  display: block;
+  //margin-right: 10px;
+}
+
+.family-item > span {
+  font-size: 4vw;
+  display: flex;
+  align-items: center;
+}
+
+.family-item > .item-content > i {
+  padding-right: 2vw;
+  font-size: 5vw;
+}
+
+.family-item{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.change-avatar img{
+  width: 90%;
+  border-radius: 5px;
+  height: auto;
+}
+
+.change-status--item > .icon-right-f{
+  color: #d3d3d3;
+  font-weight: 300;
+}
+
+.change-status{
+  margin-bottom: 20px;
+}
+
+.exitAccount{
+  color: red;
+  margin: 20px 0 20px 0;
+  font-weight: bold;
+}
+
+.settings-info p{
+  margin: 5px 0;
+}
+
+.self-desctruction{
+  color: @base_green;
+
+  font-weight: bold;
+}
+
+.gender-list {
+  //padding: 5px 0;
+  border: 1px solid @base_green;
+  border-radius: 4px;
+  display: flex;
+}
+
+.gender-item-change{
+  width: 33.3%;
+  padding: 6px 12px;
+  border-radius: 0;
+  font-size: 4vw;
+  border-right: 1px solid @base_green;
+
+  &:first-child {
+    border-radius: 3px 0 0 3px;
+  }
+
+  &:last-child {
+    border-right: none;
+    border-radius: 0 3px 3px 0;
+  }
+}
+
+.change-gender {
+  text-align: center;
+
+  & .label {
+    text-align: left;
+  }
+}
+
+.edit-bonus-coins{
+  position: absolute;
+  padding: 2px 6px;
+  border-radius: 4px;
+  right: 0;
+  background: @grad;
+  color: @white;
+  top: 0;
+  font-size: 3.7vw;
+}
+
+.edit-bonus-coins-status{
+  position: absolute;
+  padding: 2px 6px;
+  border-radius: 2px;
+  right: 38.5%;
+  transform: translateX(100%);
+  background: @grad;
+  color: @white;
+  top: 6px;
+}
+
+.empy-gender{
+  display: none;
+}
+
+.active-gender{
+  background: @grad;
+  color: @white;
+  //border: 1px solid @white;
+}
+
+.buttons-settings{
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons-settings button{
+  width: 49%;
+}

@@ -1,0 +1,4 @@
+GET http://{{host}}/users/stories/all
+Authorization: Bearer {{token}}
+Accept: application/json
+###

@@ -1,0 +1,115 @@
+@import "~LessStyle/variables.less";
+
+.imagerating-block{
+  position: relative;
+}
+
+.imagerating-block img{
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+
+  margin: auto;
+}
+
+.rating-post .VueCarousel-dot-container > .VueCarousel-dot:nth-child(1){
+  display: none;
+}
+
+.rating-post{
+  margin: 10px 0;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.postraiting-menu{
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: space-around;
+  margin: 8px 0;
+
+  &-item {
+    font-size: 32px;
+  }
+}
+
+.rating-post .VueCarousel-pagination{
+  position: absolute;
+  top: -15px;
+}
+
+.postraiting-menu-item i{
+  display: block;
+}
+
+.postraiting-menu-item{
+  font-weight: 600;
+}
+
+.raiting-sub{
+  i {
+    .bgc-grad-rating(@line-grad-sapphirine);
+  }
+}
+
+.raiting-letter{
+  i {
+    .bgc-grad-rating(@line-grad-blue);
+  }
+}
+
+.raiting-chin-chin{
+  i {
+    .bgc-grad-rating(@line-grad-green);
+  }
+}
+
+.raiting-gift{
+  i {
+    .bgc-grad-rating(@line-grad-yellow);
+  }
+}
+
+.raiting-bookmark{
+  i {
+    .bgc-grad-rating(@line-grad-red);
+  }
+}
+
+.rating-icon-index{
+  position: absolute;
+  top: 7px;
+  right: 2%;
+  color: @white;
+  padding: 2px 4px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.rating-icon-index > span{
+  font-size: 19px;
+  margin-left: 3px;
+}
+
+.index-rating-image{
+  position: absolute;
+
+  padding: 3px 7px 1px 7px;
+  color: @white;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  top: 5px;
+  right: 5px;
+}
+
+.index-rating-position{
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.VueCarousel-dot--active{
+  > button{
+    background: linear-gradient(to left top, #000fbc, @contest-list-text-color 50%) !important;
+  }
+}

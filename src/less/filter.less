@@ -1,0 +1,119 @@
+@import '~LessStyle/variables.less';
+
+.filter-button {
+  width: 75%;
+  margin: 25px auto;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid @contest-list-text-color;
+  border-radius: 4px;
+}
+
+.filters {
+  overflow-y: scroll;
+  position: fixed;
+  top: 40px;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  background: #fff;
+  z-index: 1200;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.filters-title-item {
+  font-size: 16px;
+  margin: 15px 0 10px 0;
+  color: @middle_grey;
+}
+
+.filters-bg {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1190;
+}
+
+.close-filters {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: @contest-list-text-color;
+  font-size: 24px;
+}
+
+.gender-list {
+  //padding: 5px 0;
+  border: 1px solid @base_green;
+  border-radius: 4px;
+  display: flex;
+}
+
+.gender-list-main {
+  margin: 15px 0;
+}
+
+.gender-item-change{
+  width: 33.3%;
+  padding: 6px 0;
+  border-radius: 0;
+  font-size: 3.8vw;
+  border-right: 1px solid @base_green;
+
+  &:last-child {
+   border-right: none;
+  }
+}
+
+.audience-item {
+  width: 50%;
+  padding: 6px 0;
+  border-radius: 0;
+  font-size: 3.8vw;
+  border-right: 1px solid @base_green;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.active-gender{
+  background: @grad;
+  color: @white;
+}
+
+.settings-status-main {
+  margin: 15px 0;
+  border-top: 1px solid @present_grey;
+}
+
+.settings-age-main {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.vue-slider-component .vue-slider-dot{
+  border-radius: 5px;
+}
+
+.pac-container{
+  border: 0;
+  box-shadow: none;
+  width: 75% !important;
+  right: 0 !important;
+  left: 22.5% !important;
+  margin-top: 7px;
+  z-index: 111111;
+  margin-left: 0;
+}

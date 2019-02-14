@@ -1,0 +1,30 @@
+@import 'variable';
+
+#userPrivacy {
+  margin-top: -43px;
+  .private_tabs {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+  }
+  p {
+    margin: 10px 0px;
+  }
+  .private_tab_item {
+    border: 1px solid @base_green;
+    width: 50%;
+    padding: 5px 0px;
+  }
+  .private_tab_item:first-child {
+    border-radius: 5px 0px 0px 5px;
+  }
+  .private_tab_item:last-child {
+    border-radius: 0px 5px 5px 0px;
+
+  }
+  .onactive_tabs {
+    background: @grad;
+    color: @white;
+  }
+}

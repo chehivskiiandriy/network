@@ -1,0 +1,163 @@
+@import "~LessStyle/variables.less";
+
+#chats{
+  padding-top: 10px;
+}
+
+.chat-header{
+  display: flex;
+  justify-content: space-between;
+  font-size: 26px;
+  &--item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    &:last-child{
+      border-right: 0;
+    }
+  }
+}
+
+.last-message{
+  font-size: 3.6vw;
+}
+
+.last-message-text {
+  font-size: 3.6vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat-item{
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  margin: 10px auto;
+  padding: 3px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 0 0 rgba(95, 92, 92, 0.2);
+}
+
+.chat-item a{
+  width: 90%;
+  color: #000;
+  display: flex;
+
+}
+
+.chat-unread-messages {
+  color:@red;
+  font-weight: bold;
+  font-size: 4vw;
+  width: 100%;
+}
+
+.chat-item   .comment-createdAtTime .comment-createdAt {
+  font-size: 2.4vw;
+}
+
+.chat-item .comment-createdAt {
+  font-size: 2.4vw;
+}
+
+.chat-item--avatar{
+  width: 20%;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.solo-avatar{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+}
+
+.chat-item--info{
+  width: 70%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chat-settings{
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.chat-settings p {
+  margin: 0px;
+}
+
+.comment-createdAt{
+  font-size: 10px;
+}
+
+.chats-block > div > a{
+  text-decoration: none;
+  color: #000;
+
+}
+
+.multi-img-block{
+  text-align: left;
+}
+
+.solo-avatar-0, .solo-avatar-1, .solo-avatar-2, .solo-avatar-3{
+  width: 48%;
+
+  height: auto;
+}
+
+.solo-avatar-0{
+  border-right: 1px solid #fff;
+  border-radius: 5px 0 0 0;
+}
+
+.solo-avatar-1{
+  border-left: 1px solid #fff;
+  border-radius: 0 5px 0 0;
+}
+
+.solo-avatar-2{
+  border-right: 1px solid #fff;
+  border-radius: 0 0 0 5px;
+}
+
+.solo-avatar-3{
+  border-left: 1px solid #fff;
+  border-radius: 0 0 5px 0;
+}
+
+.two-avatar-0{
+  width: 50%;
+  border-radius: 10px 0 0 10px;
+}
+
+.two-avatar-1{
+  width: 50%;
+  border-radius: 0 10px 10px 0;
+}
+
+.chat-solo-block {
+  position: relative;
+}
+
+.solochat-avatar-present {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  top:11.5vw;
+  left:70%;
+  background-color: #fff;
+  border-radius: 3px;
+  opacity: 0.7;
+}

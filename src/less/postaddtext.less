@@ -1,0 +1,274 @@
+@import "~LessStyle/variables";
+
+.post-text-header {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.post-text-header video{
+  width: 20%;
+  background: #000;
+  border-radius: 3px;
+
+}
+
+.intags-input {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+
+  button {
+    padding: 0;
+    word-break-wrap: none;
+    width: 20%;
+    margin: 0;
+    font-size: 3.5vw;
+  }
+}
+
+
+.text-header-img {
+    width: 20%;
+    height: 20%;
+    border-radius: 5px;
+}
+
+.text-header-teaxtarea {
+    width: 71.5%;
+    border-radius: 5px;
+    border:1px solid @contest-list-text-color;
+    padding: 10px;
+  font-size: 16px;
+}
+
+.text-repost-teaxtarea {
+  width: 100%;
+  border-radius: 5px;
+  border:1px solid #d3d3d3;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.post-intag {
+    width: 77%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid @contest-list-text-color;
+    border-radius: 5px;
+  font-size: 14px;
+ }
+
+.repost-intag {
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+ .post-location {
+     width: 100%;
+     padding: 10px;
+     box-sizing: border-box;
+     margin-top:3px;
+     border-top:1px solid #d3d3d3;
+     border-bottom:1px solid #d3d3d3;
+     color:#d3d3d3;
+     font-weight: 600;
+ }
+
+ .post-mentions {
+    width: 100%;
+    border-bottom:1px solid #d3d3d3;
+    color:#d3d3d3;
+    font-weight: 600;
+    display: flex;
+   align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+ }
+
+ .post-location-search {
+     display: flex;
+     justify-content: space-between;
+     align-items: center
+ }
+
+ #intagList {
+     display: flex;
+     flex-wrap: wrap;
+     width: 97.5%;
+   margin: auto;
+   margin-top: 3px;
+ }
+
+ .intagList-item  {
+     display: flex;
+     align-items: center;
+     padding:3px 10px;
+     border: 1px solid #d3d3d3;
+     margin: 5px 5px;
+     border-radius: 5px;
+     color: #d3d3d3;
+ }
+
+ .intagList-item i {
+     margin-left: 5px;
+     color: @contest-list-text-color;
+     font-size: 20px;
+ }
+
+
+
+
+ .modal-title {
+     text-align: center;
+     color: @contest-list-text-color;
+     font-weight: 500;
+
+     position: relative;
+     padding-bottom: 5px;
+ }
+
+ .modal-goback {
+     position: absolute;
+     left:10px;
+     top:0px;
+ }
+
+ .modal-location {
+    font-size: 16px;
+     width: 97%;
+     margin:10px auto;
+     padding: 10px;
+     box-sizing: border-box;
+     border:1px solid @contest-list-text-color;
+     border-radius: 3px;
+     display: block;
+ }
+
+ .pac-container {
+     border:0px;
+     box-shadow: none;
+     width: 100% !important;
+     left:0px !important;
+     margin-top:10px;
+    z-index: 111111;
+ }
+
+ .hdpi.pac-logo:after {
+    content: '';
+ }
+
+ .pac-item {
+     border-bottom:1px solid #e6e6e6;
+ }
+
+
+.search-item {
+    display: flex;
+    margin:10px 0px;
+    box-shadow: 2px 2px 0px 0px rgba(95, 92, 92, 0.2);
+    padding: 5px 0px;
+
+}
+
+
+
+.subscribers-item-avatar  {
+    margin:0px 10px;
+
+}
+
+.user-subscribers-nickname {
+    font-weight:600;
+}
+
+.subscribers-item-avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: block;
+}
+
+.subscribers-item-info {
+    text-align: left;
+}
+
+.subscribers-item-info p {
+    margin:0px;
+}
+
+.user-subscribers-name {
+    color:#d3d3d3;
+    font-weight:600;
+
+}
+
+.subscribers-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mentionBlock {
+    position: absolute;
+    color:#fff;
+    background: rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    padding:3px 6px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.mentionBlock >  .icon-delete-f {
+    margin-left: 5px;
+}
+.mentionBlock p {
+    margin: 0px;
+}
+
+.post-location-value {
+    width: 50%;
+    font-weight: 300;
+    margin: 10px 0px 0px 0px;
+    border-radius: 5px;
+    border:1px solid #d3d3d3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-location-value > .icon-delete-f {
+    color:@contest-list-text-color;
+    font-size: 20px;
+}
+
+.post-location-value > div {
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
+}
+
+
+button {
+  border:1px solid @contest-list-text-color;
+  background-color: white;
+  color:@contest-list-text-color;
+  padding: 10px 10px;
+  border-radius: 4px;
+}
+
+
+.repost-post-title {
+  text-align: left;
+  padding: 0px 5px;
+}

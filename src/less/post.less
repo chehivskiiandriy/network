@@ -1,0 +1,547 @@
+@import "~LessStyle/variables.less";
+
+.header-logo i{
+  font-size: 10vw;
+  background: linear-gradient(to left top, #000fbc, #30c2be 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.moreView {
+  color: @contest-list-text-color;
+}
+
+.post-small-info {
+  a {
+    color:@white;
+  }
+  height: auto;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+  border-radius: 0 0 5px 5px;
+  text-align: left;
+  color: #fff;
+  padding-bottom: 3vw;
+
+  span {
+    margin-left: 2.5%;
+    font-size: 3.5vw;
+  }
+}
+
+.post-logo-text{
+  font-size: 3.75vw;
+  display: flex;
+  justify-content: center;
+}
+
+.post-logo-text b {
+  margin-right: 3px;
+}
+
+.opacity-bakcground{
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  filter: blur(1.5em);
+  z-index: 1;
+  top: 0;
+  background-position-y: 41px;
+
+}
+
+.postssmall-container{
+  width: 47%;
+  display: inline-block;
+  margin: 0 1%;
+}
+
+.post-item--menu{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  padding: 0 3vw;
+}
+
+.post-item--image{
+  width: 100%;
+  position: relative;
+}
+
+.post-item--image img{
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+  display: block;
+}
+
+.postsmall-image-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+  border-radius: 0 0 5px 5px;
+  text-align: right;
+  color: #fff;
+  padding: 5px 28% 2px 0;
+  box-sizing: border-box;
+
+  .info-nickname {
+    font-size: 3.5vw;
+  }
+
+
+}
+
+.header-user--nickname-group {
+  text-align: right;
+}
+
+.post-small-avatar {
+  position: absolute;
+  right: 2%;
+  bottom: 5%;
+  height: 20%;
+  width: 23%;
+
+  img {
+    border-radius: 4px;
+  }
+}
+
+.video-block{
+  position: relative;
+}
+
+.post-item--image video{
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  border-radius: 10px 10px 0 0;
+  display: block;
+
+}
+
+.post-time{
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.post-time > span{
+  font-size: 10px;
+  color: #000;
+}
+
+.post-type--play{
+  position: absolute;
+  width: 30%;
+  left: 35%;
+  top: 35%;
+}
+
+.post-item{
+  width: 100%;
+  position: relative;
+  padding: 0 0;
+  padding-top: 5px;
+
+}
+
+.post-item--header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 1.4vw;
+}
+
+.header-user_avatar .solo-user-avatar{
+  width: 14.5vw;
+  height: 14.5vw;
+  border-radius: 4px;
+  display: block;
+}
+
+.post-intags{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 0;
+}
+
+.post-intags span{
+  padding: 0 5px;
+  color: #777;
+  font-size: 12px;
+  .text-grad();
+  //color: @contest-list-text-color;
+}
+
+.post-title{
+  text-align: left;
+  padding: 0 5px 2vw;
+  margin: 0;
+  font-weight: 300;
+  word-wrap: break-word;
+  font-size: 3.9vw;
+  width: 97%;
+}
+
+.header-logo{
+  width: 40%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+}
+.header-location {
+  display: block;
+  width: 70%;
+}
+
+.group-header-location{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  text-align: right;
+  font-size: 3vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+
+  i {
+    .text-grad();
+    font-size: 4.5vw;
+    text-shadow: none;
+  }
+}
+
+
+
+.header-location-city{
+  text-align: right;
+  font-weight: bold;
+  font-size: 3vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-location-place{
+  text-align: right;
+  font-size: 3vw;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-user_avatar{
+  width: 44vw;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.header-settings{
+  width: 10%;
+  text-align: right;
+  font-size: 4.2vw;
+}
+
+.header-user--link{
+  max-width: 76%;
+}
+
+.header-user--link-1 {
+  text-align: right;
+}
+
+.header-user--nickname{
+  padding-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 3.5vw;
+  font-weight: 600;
+  color: #000;
+}
+
+.VueCarousel-pagination{
+  position: absolute;
+  top: -15px;
+}
+
+.VueCarousel-dot-inner{
+  border-radius: 2px !important;
+
+}
+
+.postmall-header{
+  display: block;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+.post-normal {
+  position: relative;
+}
+
+.postmall-header img{
+  margin: auto;
+}
+
+.postssmall-image img{
+  border-radius: 5px;
+}
+
+.postssmall-image video{
+  border-radius: 5px;
+}
+
+.postsmall-item{
+
+  position: relative;
+
+}
+
+.postsmall-item--header{
+  margin: 0;
+}
+
+.postssmall-image-img, .postmall-header img, .postssmall-image img{
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+}
+
+.postmall-header b{
+  // text-shadow: @box_shadow_small;
+}
+
+.post-type--muted{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+}
+
+.post-mentions--icon{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: @white;
+
+}
+
+.post-mentions-block{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mentions-item{
+  position: absolute;
+}
+
+.mentionBlock{
+  position: absolute;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+  padding: 3px 6px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.post-image--slide{
+  position: relative;
+}
+
+.mention-icon-index{
+  z-index: 1;
+}
+
+.mention-iconbig-index{
+  z-index: 1111;
+}
+
+.post-more{
+  margin-bottom: 10px;
+  color: @base_green;
+  font-weight: bold;
+}
+
+.post-repost{
+  position: relative;
+}
+
+.post-repost-icon{
+  display: flex;
+  color: @white;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.post-repost-icon .icon-share-f {
+  margin-right: 3px;
+  margin-top: 2px;
+}
+
+.post-profilerepost-icon{
+  display: flex;
+  color: @white;
+  position: absolute;
+  bottom: 3px;
+  left: 5px;
+  font-size: 12px;
+  width: 92%;
+  align-items: center;
+  a{
+    display: inline-block;
+    .no-wrap();
+    max-width: 82px;
+  }
+}
+
+.post-profilerepost-icon > .icon-share-f{
+  margin-right: 2px;
+}
+
+.post-profilerepost-icon a{
+  color: @white;
+}
+
+.post-repost-icon a{
+  color: @white;
+}
+
+.post-image--ooops img{
+  width: 100%;
+  height: auto;
+}
+
+.repost-ownertitle{
+  font-weight: 500;
+  font-style: italic;
+  text-align: left;
+  padding-left: 5px;
+  margin-top: 5px;
+  word-wrap: break-word;
+  border-bottom: 1px solid @grey_grey;
+}
+
+.ratingheader-logo{
+  position: relative;
+  width: 40%;
+  text-align: left;
+  margin-top: -20px;
+  margin-left: 5px;
+  i{
+    .text-grad();
+    font-size: 28px;
+  }
+  &-number{
+
+    font-size: 30px;
+    width: 40px;
+    letter-spacing: -3px;
+    text-align: center;
+    left: -5px;
+
+  }
+  &-type{
+    position: absolute;
+    font-size: 20px;
+    word-wrap: normal;
+    width: 50px;
+    bottom: -16px;
+    left: 0px;
+    text-align: center;
+
+
+
+  }
+}
+
+.VueCarousel-dot-container li{
+  margin: 0 5px;
+}
+
+.header-user_avatarsmall{
+  width: 100%;
+  text-align: center;
+
+}
+
+.postmall-header img{
+  border-radius: 3px;
+  width: 27%;
+  display: block;
+}
+
+
+.profile-video-background {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.blur-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  filter: blur(0.17em);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.post-author-contest {
+  position: absolute;
+  top: 10px;
+  left:10px;
+  font-size: 20px;
+  color:@white;
+  text-shadow: 0 0 2px black;
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.post__content-forward-media {
+  z-index: 9;
+}

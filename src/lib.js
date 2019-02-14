@@ -1,0 +1,14 @@
+// window.axios = require('axios');
+window.ProgressBar=require('progressbar.js');
+window.host='https://m.inrating.top';
+// window.axios.defaults.headers['Authorization'] = 'Bearer ' + localStorage.getItem('token');
+window.clientWidth=localStorage.getItem('clientWidth');
+window.lang=localStorage.getItem('lang') || 'en';
+window.userInfo=JSON.parse(localStorage.getItem('user'));
+// window.apiUrl="https://api.inrating.top/v1/";
+// window.apiUrlV="https://api.inrating.top/";
+// window.apiUrl="http://dev2.core.innet.club/v1/";
+// window.apiUrlV="http://dev2.core.innet.club/";
+// window.apiDrotr="https://restdev01.tiw-sys.eu/api/v1/";
+window.chatsHeader=false;
+window.profileViewIndex=true;

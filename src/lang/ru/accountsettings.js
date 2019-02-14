@@ -1,0 +1,18 @@
+module.exports= {
+  account:'Учетная запись',
+  change_password:'Изменить пароль',
+  likes_history:'история лайков',
+  black_list:'Черный список',
+  close_profile:'Временно закрыть аккаунт',
+  phone:'Мобильный  телефон',
+  old_password:'Старый пароль',
+  new_password:'Новый пароль',
+  repeat_password:'Повторить пароль',
+  save:'Сохранить',
+  only_for_application:'Только для заявок',
+  sub_on_page:'Кто может подписаться на мой профиль',
+  sees_page: 'Кто  видит посты моей страницы',
+  sees_followers:'Кто видит моих подписчиков',
+  sees_subscriptions:'Кто видит мои подписки',
+  can_write_chat:'Кто может писать мне в чат',
+}

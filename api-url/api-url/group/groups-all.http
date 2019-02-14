@@ -1,0 +1,14 @@
+GET http://{{host}}/groups/all
+Authorization: Bearer {{token}}
+Accept: application/json
+### all group
+
+GET http://{{host}}/groups/all?type=event
+Authorization: Bearer {{token}}
+Accept: application/json
+### all group(event)
+
+GET http://{{host}}/groups/get?id=5
+Authorization: Bearer {{token}}
+Accept: application/json
+### group by ID

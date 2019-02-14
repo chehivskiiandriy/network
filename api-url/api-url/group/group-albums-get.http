@@ -1,0 +1,7 @@
+GET http://{{host}}/albums/get?id=8
+Authorization: Bearer {{token}}
+Accept: application/json
+
+#< json/group-albums-get.json данный прикол дает возможность делать unit тесты, надо попробовать как оно работает.
+### all group
+

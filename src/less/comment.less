@@ -1,0 +1,80 @@
+@import '~LessStyle/variables';
+
+.comment-avatar .solo-user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 3px;
+  display: block;
+}
+
+.comment-avatar {
+  margin-right: 10px;
+}
+
+.post-comment-item {
+  div {
+    i {
+      .text-grad();
+    }
+  }
+  width: 100%;
+  display: flex;
+  padding: 10px 10px 0 10px;
+  box-sizing: border-box;
+  position: relative;
+  margin: 10px 0;
+  border-top: 1px solid #d3d3d3;
+  align-items: flex-start;
+}
+
+.comment-createdAt {
+  font-size: 10px;
+  color: #d3d3d3;
+}
+
+.comment-nickname {
+  font-size: 3.6vw;
+}
+
+.comment-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 70%;
+  min-height: 60px;
+  word-wrap: break-word
+}
+
+.comment-text {
+  text-align: left;
+  font-size: 3.2vw;
+}
+
+.comment-answer {
+  position: absolute;
+  color: @contest-list-text-color;
+  right: 10px;
+  bottom: 0;
+  font-size: 14px;
+}
+
+.comment-delete {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.post-more {
+  border-top: 1px solid #d3d3d3;
+  padding-top: 10px;
+  margin-top: 5px;
+}
+
+.load-more {
+  border-top: 1px solid #d3d3d3;
+  padding-top: 10px;
+  margin-top: 5px;
+  .text-grad();
+  font-size: 3.4vw;
+}

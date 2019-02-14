@@ -1,0 +1,14 @@
+GET {{host}}/me
+Authorization: Bearer {{token}}
+Accept: application/json
+###
+
+GET {{host}}/me/selfdestruction?delete=1
+Authorization: Bearer {{token}}
+Accept: application/json
+###
+
+GET {{host}}/me/selfdestruction?delete=0
+Authorization: Bearer {{token}}
+Accept: application/json
+###

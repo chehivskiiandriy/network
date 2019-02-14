@@ -1,0 +1,4 @@
+GET http://{{host}}/users/rating?type=day
+Authorization: Bearer {{token}}
+Accept: application/json
+###

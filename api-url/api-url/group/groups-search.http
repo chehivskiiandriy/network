@@ -1,0 +1,4 @@
+GET http://{{host}}/groups/search?query=
+Authorization: Bearer {{token}}
+Accept: application/json
+###

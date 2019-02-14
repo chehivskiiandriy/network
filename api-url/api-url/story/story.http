@@ -1,0 +1,9 @@
+GET http://{{host}}/users/stories/all
+Authorization: Bearer {{token}}
+Accept: application/json
+### all user on story
+
+GET http://{{host}}/users/stories/get?nickname=AntonKoval
+Authorization: Bearer {{token}}
+Accept: application/json
+### get certain user

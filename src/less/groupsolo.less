@@ -1,0 +1,85 @@
+@import '~LessStyle/variables.less';
+
+#groupSolo {
+  margin-top: -43px;
+  padding-bottom: 40px;
+}
+
+.group-solo--header {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 10px 0px;
+    z-index: 11;
+}
+//
+//.group-logo {
+//    width: 60px;
+//    height: 60px;
+//    border: 1px solid #fff;
+//    border-radius: 5px;
+//}
+//
+//.group-solo--logo {
+//    color:#fff;
+//}
+
+.group-solo--info {
+    color:#fff;
+}
+
+.group-solo-settings {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+.group-settings--item {
+    width: 33%;
+}
+
+.group-location , .group-desc {
+    color:@contest-list-text-color;
+}
+
+.group-black {
+    background: linear-gradient(transparent,#000);
+    opacity: .7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    z-index: -1;
+}
+
+.group-menu {
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.group-menu--item {
+    width: 10%;
+}
+
+.group-menu--item p{
+    margin: 0px 0px;
+  .text-grad();
+}
+
+.group-menu--item i {
+    .text-grad();
+}
+
+.subscribe {
+    font-size:29px;
+}
+
+.settings {
+    font-size: 22px;
+}

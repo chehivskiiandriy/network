@@ -1,0 +1,4 @@
+GET http://{{host}}/groups/posts/all?group_id=5
+Authorization: Bearer {{token}}
+Accept: application/json
+###

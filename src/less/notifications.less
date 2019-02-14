@@ -1,0 +1,50 @@
+@import "~LessStyle/variables.less";
+
+.notifications {
+  z-index: 17000 !important;
+}
+
+.notification-guest{
+  color: @white;
+  padding: 6px;
+  text-align: center;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  position: absolute;
+  width: 80%;
+  min-height: 26px;
+  background: #646464;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.notification-wrapper {
+  width: 80% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-button{
+  border-radius: 3px;
+  border: 1px solid @white;
+  background: transparent;
+  color: @white;
+  font-size: 10px;
+  padding: 5px 20px;
+  margin: 5px 0;
+}
+
+.v-fade-left-enter-active,
+.v-fade-left-leave-active,
+.v-fade-left-move{
+  transition: all .5s;
+}
+
+.v-fade-left-enter,
+.v-fade-left-leave-to{
+  opacity: 0;
+  transform: translateY(-50px);
+}

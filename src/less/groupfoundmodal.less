@@ -1,0 +1,31 @@
+@import "~LessStyle/variables.less";
+
+[data-modal="foundGroupsModal"]{
+  .search-input{
+    border-radius: @border-radius;
+    border: 1px solid @contest-list-text-color;
+    color: #d3d3d3;
+    margin: 10px auto;
+    text-align: left;
+    padding: 5px 10px;
+    width: 85%;
+  }
+
+  #searchGroup{
+    border: 0;
+    width: 80%;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .groups-function--item{
+    > i{
+      .text-grad();
+    }
+  }
+
+  .groups-founded--modal{
+    height: 80vh;
+    overflow-y: scroll;
+  }
+}

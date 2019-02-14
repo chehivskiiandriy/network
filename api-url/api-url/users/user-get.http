@@ -1,0 +1,19 @@
+GET http://{{host}}/users/get
+Authorization: Bearer {{token}}
+Accept: application/json
+###
+
+GET http://{{host}}/me/wallet/info
+Authorization: Bearer {{token}}
+Accept: application/json
+###
+
+GET http://{{host}}/me/wallet/coinpacks/all
+Authorization: Bearer {{token}}
+Accept: application/json
+###
+
+GET http://{{host}}/users/get?nickname=hghjghjghngh
+Authorization: Bearer {{token}}
+Accept: application/json
+###
